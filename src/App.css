@@ -1,38 +1,88 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  margin: 100px 0 100px 500px;
+} 
+.todo-list{
+  width: 500px;
+  height: 80px;
+  background-color: rgb(224, 56, 56);
+  margin: 20px 0 0  0;
   text-align: center;
+  padding-top: 80px;
+}
+input{
+  width: 350px;
+
+}
+.title{
+  float: top;
+  display: block;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  opacity: 0.5;
+}
+.begin{
+  width: 500px;
+  margin-left: -40px;
+  margin-top: 0px;
+  
+}
+.iteam-checked {
+  width: 500px;
+  height: 30px;
+  background-color: rgb(136, 133, 133);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span.checked{
+  width: 30px;
+  float: right;
+  border-style: none;
+  font-weight: 1000;
+  text-align: center;
+  margin-top: -30px;
+  background-color: rgb(136, 133, 133);
+}
+.uncheck{
+  padding-left: 57px;
+  background-color: rgb(240, 234, 234);
+}
+.checked, .uncheck{
+ height: 30px;
+ display: block;
+}
+.Ficheck{
+  margin: 0 30px 0 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:hover ,input{
+  height: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 35px;
+  border-radius: 30px;
+}
+button{
+  margin-left: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 15px;
+  opacity: 0.5;
+  border-spacing: none ;
+}
+li{
+  list-style: none;
+}
+li.checked{
+  opacity: 0.4;
+  text-decoration: line-through;
+  width: 470px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
